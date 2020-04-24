@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <div id="words">
+            JS is amazing!
+        </div>
+        
+        <button onclick="changeWords()">
+            Change Word
+        </button>
+
+        <script>
+            function changeWords(){
+               //document:reserved word for the whole webpage
+               var wordsElement = document.getElementById("words");
+                if (wordsElement.innerText == 'Hello World!'){
+                    wordsElement.innerText = 'JS is amazing';
+                }
+                else {
+                    wordsElement.innerText = 'Hello World!';
+                }
+                
+            }
+
+
+
+
+            // below this line is not visible to users they are logic
+            var firstName = "Steven"
+            console.log(firstName);
+
+            var age = 20;
+            var isAdult = age > 18;
+            console.log(isAdult)
+        </script>
+    </body>
+</html>
